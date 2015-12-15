@@ -1,0 +1,72 @@
+#-- show that the database is empty
+~/myGit/oracleRestApi on  master! ⌚ 12:12:01
+$ curl -X DELETE http://localhost:3000/events                                                                                                               ‹ruby-2.2.1›
+OK%
+
+#-- post some events
+~/myGit/oracleRestApi on  master! ⌚ 12:12:06
+$ curl -X POST "http://localhost:3000/events" -H "Content-Type: application/json" -d '{"data":"NAME-14-1 is now at LATITUDE/LONGITUDE"}'                    ‹ruby-2.2.1›
+[14,"NAME-14-1 is now at LATITUDE/LONGITUDE"]%
+
+~/myGit/oracleRestApi on  master! ⌚ 12:12:14
+$ curl -X POST "http://localhost:3000/events" -H "Content-Type: application/json" -d '{"data":"NAME-15-1 is now at LATITUDE/LONGITUDE"}'                    ‹ruby-2.2.1›
+[15,"NAME-15-1 is now at LATITUDE/LONGITUDE"]%
+
+~/myGit/oracleRestApi on  master! ⌚ 12:12:22
+$ curl -X POST "http://localhost:3000/events" -H "Content-Type: application/json" -d '{"data":"NAME-16-1 is now at LATITUDE/LONGITUDE"}'                    ‹ruby-2.2.1›
+[16,"NAME-16-1 is now at LATITUDE/LONGITUDE"]%
+
+#-- show that the events are in the database
+~/myGit/oracleRestApi on  master! ⌚ 12:12:29
+$ curl -X GET http://localhost:3000/events                                                                                                                  ‹ruby-2.2.1›
+[[14,"NAME-14-1 is now at LATITUDE/LONGITUDE"],[15,"NAME-15-1 is now at LATITUDE/LONGITUDE"],[16,"NAME-16-1 is now at LATITUDE/LONGITUDE"]]%
+
+#-- pull out event 15
+~/myGit/oracleRestApi on  master! ⌚ 12:12:44
+$ curl -X GET http://localhost:3000/events/15                                                                                                               ‹ruby-2.2.1›
+["15","NAME-15-1 is now at LATITUDE/LONGITUDE"]%
+
+#-- try to pull out an event that isn't there
+~/myGit/oracleRestApi on  master! ⌚ 12:12:54
+$ curl -X GET http://localhost:3000/events/152                                                                                                              ‹ruby-2.2.1›
+["152",null]%
+
+#-- try to update an event that isn't there
+~/myGit/oracleRestApi on  master! ⌚ 12:13:01
+$ curl -X PUT "http://localhost:3000/events/2" -H "Content-Type: application/json" -d '{"data":"NAME-15-2 is now at LATITUDE/LONGITUDE"}'                   ‹ruby-2.2.1›
+["2",null]%
+
+#-- update event 15
+~/myGit/oracleRestApi on  master! ⌚ 12:13:39
+$ curl -X PUT "http://localhost:3000/events/15" -H "Content-Type: application/json" -d '{"data":"NAME-15-2 is now at LATITUDE/LONGITUDE"}'                  ‹ruby-2.2.1›
+["15","NAME-15-2 is now at LATITUDE/LONGITUDE"]%
+
+#-- get shows the newly updated value
+~/myGit/oracleRestApi on  master! ⌚ 12:13:59
+$ curl -X GET http://localhost:3000/events/15                                                                                                               ‹ruby-2.2.1›
+["15","NAME-15-2 is now at LATITUDE/LONGITUDE"]%
+
+#-- get all values. notice that the updated value is there
+~/myGit/oracleRestApi on  master! ⌚ 12:14:11
+$ curl -X GET http://localhost:3000/events                                                                                                                  ‹ruby-2.2.1›
+[[14,"NAME-14-1 is now at LATITUDE/LONGITUDE"],[15,"NAME-15-2 is now at LATITUDE/LONGITUDE"],[16,"NAME-16-1 is now at LATITUDE/LONGITUDE"]]%
+
+#-- delete event 1
+~/myGit/oracleRestApi on  master! ⌚ 12:14:38
+$ curl -X DELETE http://localhost:3000/events/15                                                                                                            ‹ruby-2.2.1›
+["15",null]%
+
+#-- show all events.  notice that event 15 is gone
+~/myGit/oracleRestApi on  master! ⌚ 12:15:07
+$ curl -X GET http://localhost:3000/events                                                                                                                  ‹ruby-2.2.1›
+[[14,"NAME-14-1 is now at LATITUDE/LONGITUDE"],[16,"NAME-16-1 is now at LATITUDE/LONGITUDE"]]%
+
+#-- delete all events
+~/myGit/oracleRestApi on  master! ⌚ 12:15:11
+$ curl -X DELETE http://localhost:3000/events                                                                                                               ‹ruby-2.2.1›
+OK%
+
+#-- get all indicates that all events have been deleted
+~/myGit/oracleRestApi on  master! ⌚ 12:15:23
+$ curl -X GET http://localhost:3000/events                                                                                                                  ‹ruby-2.2.1›
+[]%
