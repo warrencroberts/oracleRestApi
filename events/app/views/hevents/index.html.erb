@@ -1,0 +1,20 @@
+<h1>Welcome to the Events manager</h1>
+
+<%= link_to 'New event', new_hevent_path %>
+<br>
+<table>
+  <tr>
+    <th>data</th>
+  </tr>
+
+  <% @events.each do |event| %>
+      <tr>
+        <td><%= event.data %></td>
+        <td><%= link_to 'Show', hevent_path(event) %></td>
+        <td><%= link_to 'Edit', edit_hevent_path(event) %></td>
+        <td><%= link_to 'Destroy', hevent_path(event),
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+</table>

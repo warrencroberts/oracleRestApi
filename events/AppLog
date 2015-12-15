@@ -1,0 +1,1909 @@
+# Logfile created on 2015-12-14 19:33:04 -0700 by logger.rb/47272
+D, [2015-12-14T19:45:25.736206 #24040] DEBUG -- : 
+D, [2015-12-14T19:45:25.736262 #24040] DEBUG -- : 
+I, [2015-12-14T19:45:25.736427 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:45:25 -0700
+D, [2015-12-14T19:45:25.857208 #24040] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2015-12-14T19:45:25.893351 #24040] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T19:45:29.894191 #24040] DEBUG -- : 
+D, [2015-12-14T19:45:29.894259 #24040] DEBUG -- : 
+I, [2015-12-14T19:45:29.894402 #24040]  INFO -- : Started GET "/hevents/7/edit" for 127.0.0.1 at 2015-12-14 19:45:29 -0700
+D, [2015-12-14T19:45:29.910805 #24040] DEBUG -- :   [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 7]]
+D, [2015-12-14T19:45:50.828493 #24040] DEBUG -- : 
+D, [2015-12-14T19:45:50.828544 #24040] DEBUG -- : 
+I, [2015-12-14T19:45:50.828641 #24040]  INFO -- : Started PATCH "/hevents" for 127.0.0.1 at 2015-12-14 19:45:50 -0700
+F, [2015-12-14T19:45:50.831171 #24040] FATAL -- : 
+ActionController::RoutingError (No route matches [PATCH] "/hevents"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-12-14T19:49:31.269383 #24040] DEBUG -- : 
+D, [2015-12-14T19:49:31.269443 #24040] DEBUG -- : 
+I, [2015-12-14T19:49:31.269568 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:49:31 -0700
+D, [2015-12-14T19:49:31.275588 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T19:49:32.978444 #24040] DEBUG -- : 
+D, [2015-12-14T19:49:32.978502 #24040] DEBUG -- : 
+I, [2015-12-14T19:49:32.978609 #24040]  INFO -- : Started GET "/hevents/new" for 127.0.0.1 at 2015-12-14 19:49:32 -0700
+D, [2015-12-14T19:49:38.158345 #24040] DEBUG -- : 
+D, [2015-12-14T19:49:38.158396 #24040] DEBUG -- : 
+I, [2015-12-14T19:49:38.158476 #24040]  INFO -- : Started POST "/hevents" for 127.0.0.1 at 2015-12-14 19:49:38 -0700
+D, [2015-12-14T19:49:38.161286 #24040] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-14T19:49:38.162699 #24040] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["key", "bbbb"], ["value", "dddd"], ["created_at", "2015-12-15 02:49:38.161413"], ["updated_at", "2015-12-15 02:49:38.161413"]]
+D, [2015-12-14T19:49:38.163776 #24040] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+D, [2015-12-14T19:49:38.169937 #24040] DEBUG -- : 
+D, [2015-12-14T19:49:38.169984 #24040] DEBUG -- : 
+I, [2015-12-14T19:49:38.170061 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:49:38 -0700
+D, [2015-12-14T19:49:38.176204 #24040] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T19:51:34.267332 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.267385 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.267482 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:34.274491 #24040] DEBUG -- :   [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T19:51:34.338345 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.338397 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.338526 #24040]  INFO -- : Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:34.344899 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.344957 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.345084 #24040]  INFO -- : Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:34.351654 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.351889 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.352638 #24040]  INFO -- : Started GET "/assets/hevents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:34.359677 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.362627 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.362820 #24040]  INFO -- : Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:34.372326 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.372413 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.372609 #24040]  INFO -- : Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:34.377077 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.377118 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.377258 #24040]  INFO -- : Started GET "/assets/hevents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:34.380125 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.380174 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.380361 #24040]  INFO -- : Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:34.384804 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.385001 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.385194 #24040]  INFO -- : Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:34.390770 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:34.390956 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:34.391159 #24040]  INFO -- : Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-14 19:51:34 -0700
+D, [2015-12-14T19:51:38.069407 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:38.069468 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:38.069566 #24040]  INFO -- : Started GET "/hevents/6" for 127.0.0.1 at 2015-12-14 19:51:38 -0700
+D, [2015-12-14T19:51:38.072474 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 6]]
+D, [2015-12-14T19:51:40.264398 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:40.264458 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:40.264558 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:51:40 -0700
+D, [2015-12-14T19:51:40.273972 #24040] DEBUG -- :   [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T19:51:41.734838 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:41.735075 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:41.735193 #24040]  INFO -- : Started GET "/hevents/6" for 127.0.0.1 at 2015-12-14 19:51:41 -0700
+D, [2015-12-14T19:51:41.738179 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 6]]
+D, [2015-12-14T19:51:43.785279 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:43.785340 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:43.785963 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:51:43 -0700
+D, [2015-12-14T19:51:43.793665 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T19:51:50.030943 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:50.030994 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:50.031087 #24040]  INFO -- : Started DELETE "/hevents/6" for 127.0.0.1 at 2015-12-14 19:51:50 -0700
+D, [2015-12-14T19:51:50.033501 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 6]]
+D, [2015-12-14T19:51:50.033807 #24040] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-14T19:51:50.034543 #24040] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 6]]
+D, [2015-12-14T19:51:50.041638 #24040] DEBUG -- :   [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+D, [2015-12-14T19:51:50.048818 #24040] DEBUG -- : 
+D, [2015-12-14T19:51:50.048876 #24040] DEBUG -- : 
+I, [2015-12-14T19:51:50.048967 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:51:50 -0700
+D, [2015-12-14T19:51:50.054981 #24040] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T19:52:54.812196 #24040] DEBUG -- : 
+D, [2015-12-14T19:52:54.812255 #24040] DEBUG -- : 
+I, [2015-12-14T19:52:54.812341 #24040]  INFO -- : Started GET "/hevents/7" for 127.0.0.1 at 2015-12-14 19:52:54 -0700
+D, [2015-12-14T19:52:54.814571 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 7]]
+D, [2015-12-14T19:54:20.218813 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:20.218862 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:20.218954 #24040]  INFO -- : Started GET "/hevents/8" for 127.0.0.1 at 2015-12-14 19:54:20 -0700
+D, [2015-12-14T19:54:20.221153 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+D, [2015-12-14T19:54:21.883519 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:21.883582 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:21.883686 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:54:21 -0700
+D, [2015-12-14T19:54:21.891610 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+F, [2015-12-14T19:54:21.903668 #24040] FATAL -- : 
+ActionView::Template::Error (undefined method `edit_hevents_path' for #<#<Class:0x007fa789efe588>:0x007fa7919493b0>):
+    13:         <td><%= event.key %></td>
+    14:         <td><%= event.value %></td>
+    15:         <td><%= link_to 'Show', hevent_path(event) %></td>
+    16:         <td><%= link_to 'Edit', edit_hevents_path(event)%></td>
+    17:         <td><%= link_to 'Destroy', hevent_path(event),
+    18:                         method: :delete,
+    19:                         data: { confirm: 'Are you sure?' } %></td>
+  app/views/hevents/index.html.erb:16:in `block in _app_views_hevents_index_html_erb__2113394667875422679_70178839347340'
+  app/views/hevents/index.html.erb:11:in `_app_views_hevents_index_html_erb__2113394667875422679_70178839347340'
+
+
+D, [2015-12-14T19:54:22.186377 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:22.186423 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:22.186510 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:54:22 -0700
+D, [2015-12-14T19:54:22.192247 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+F, [2015-12-14T19:54:22.207965 #24040] FATAL -- : 
+ActionView::Template::Error (undefined method `edit_hevents_path' for #<#<Class:0x007fa789efe588>:0x007fa791a50c68>):
+    13:         <td><%= event.key %></td>
+    14:         <td><%= event.value %></td>
+    15:         <td><%= link_to 'Show', hevent_path(event) %></td>
+    16:         <td><%= link_to 'Edit', edit_hevents_path(event)%></td>
+    17:         <td><%= link_to 'Destroy', hevent_path(event),
+    18:                         method: :delete,
+    19:                         data: { confirm: 'Are you sure?' } %></td>
+  app/views/hevents/index.html.erb:16:in `block in _app_views_hevents_index_html_erb__2113394667875422679_70178839911680'
+  app/views/hevents/index.html.erb:11:in `_app_views_hevents_index_html_erb__2113394667875422679_70178839911680'
+
+
+D, [2015-12-14T19:54:28.542579 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.542640 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.542773 #24040]  INFO -- : Started GET "/hevents/8" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:28.545510 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 8]]
+D, [2015-12-14T19:54:28.601648 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.601739 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.601945 #24040]  INFO -- : Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:28.608879 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.608990 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.609314 #24040]  INFO -- : Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:28.618411 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.618541 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.618926 #24040]  INFO -- : Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:28.626315 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.628946 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.630436 #24040]  INFO -- : Started GET "/assets/hevents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:28.633245 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.633299 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.633396 #24040]  INFO -- : Started GET "/assets/hevents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:28.636165 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.636242 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.636478 #24040]  INFO -- : Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:28.641576 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.641633 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.641782 #24040]  INFO -- : Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:28.646073 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.646370 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.646766 #24040]  INFO -- : Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:28.650450 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:28.650623 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:28.650812 #24040]  INFO -- : Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-14 19:54:28 -0700
+D, [2015-12-14T19:54:30.799329 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:30.799401 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:30.799514 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:54:30 -0700
+D, [2015-12-14T19:54:30.806955 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+F, [2015-12-14T19:54:30.819555 #24040] FATAL -- : 
+ActionView::Template::Error (undefined method `edit_hevents_path' for #<#<Class:0x007fa789efe588>:0x007fa78c19d288>):
+    13:         <td><%= event.key %></td>
+    14:         <td><%= event.value %></td>
+    15:         <td><%= link_to 'Show', hevent_path(event) %></td>
+    16:         <td><%= link_to 'Edit', edit_hevents_path(event)%></td>
+    17:         <td><%= link_to 'Destroy', hevent_path(event),
+    18:                         method: :delete,
+    19:                         data: { confirm: 'Are you sure?' } %></td>
+  app/views/hevents/index.html.erb:16:in `block in _app_views_hevents_index_html_erb__2113394667875422679_70178839347340'
+  app/views/hevents/index.html.erb:11:in `_app_views_hevents_index_html_erb__2113394667875422679_70178839347340'
+
+
+D, [2015-12-14T19:54:31.091332 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:31.091380 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:31.091458 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:54:31 -0700
+D, [2015-12-14T19:54:31.096646 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+F, [2015-12-14T19:54:31.107893 #24040] FATAL -- : 
+ActionView::Template::Error (undefined method `edit_hevents_path' for #<#<Class:0x007fa789efe588>:0x007fa7920126b0>):
+    13:         <td><%= event.key %></td>
+    14:         <td><%= event.value %></td>
+    15:         <td><%= link_to 'Show', hevent_path(event) %></td>
+    16:         <td><%= link_to 'Edit', edit_hevents_path(event)%></td>
+    17:         <td><%= link_to 'Destroy', hevent_path(event),
+    18:                         method: :delete,
+    19:                         data: { confirm: 'Are you sure?' } %></td>
+  app/views/hevents/index.html.erb:16:in `block in _app_views_hevents_index_html_erb__2113394667875422679_70178839911680'
+  app/views/hevents/index.html.erb:11:in `_app_views_hevents_index_html_erb__2113394667875422679_70178839911680'
+
+
+D, [2015-12-14T19:54:36.489319 #24040] DEBUG -- : 
+D, [2015-12-14T19:54:36.489385 #24040] DEBUG -- : 
+I, [2015-12-14T19:54:36.489471 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:54:36 -0700
+D, [2015-12-14T19:54:36.495444 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+F, [2015-12-14T19:54:36.508016 #24040] FATAL -- : 
+ActionView::Template::Error (undefined method `edit_hevents_path' for #<#<Class:0x007fa789efe588>:0x007fa789585510>):
+    13:         <td><%= event.key %></td>
+    14:         <td><%= event.value %></td>
+    15:         <td><%= link_to 'Show', hevent_path(event) %></td>
+    16:         <td><%= link_to 'Edit', edit_hevents_path(event)%></td>
+    17:         <td><%= link_to 'Destroy', hevent_path(event),
+    18:                         method: :delete,
+    19:                         data: { confirm: 'Are you sure?' } %></td>
+  app/views/hevents/index.html.erb:16:in `block in _app_views_hevents_index_html_erb__2113394667875422679_70178839911680'
+  app/views/hevents/index.html.erb:11:in `_app_views_hevents_index_html_erb__2113394667875422679_70178839911680'
+
+
+D, [2015-12-14T19:55:13.072335 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.072383 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.072501 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:13.078599 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T19:55:13.130440 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.130490 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.130609 #24040]  INFO -- : Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:13.138708 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.138756 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.138921 #24040]  INFO -- : Started GET "/assets/hevents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:13.160110 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.160233 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.160371 #24040]  INFO -- : Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:13.166403 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.166548 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.166673 #24040]  INFO -- : Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:13.174508 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.174635 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.174904 #24040]  INFO -- : Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:13.181661 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.183847 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.187890 #24040]  INFO -- : Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:13.194711 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.194782 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.194905 #24040]  INFO -- : Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:13.197655 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.197695 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.197851 #24040]  INFO -- : Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:13.201257 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:13.201486 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:13.201698 #24040]  INFO -- : Started GET "/assets/hevents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:55:13 -0700
+D, [2015-12-14T19:55:15.362053 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:15.362128 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:15.362272 #24040]  INFO -- : Started GET "/hevents/8/edit" for 127.0.0.1 at 2015-12-14 19:55:15 -0700
+D, [2015-12-14T19:55:15.364925 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+D, [2015-12-14T19:55:19.309934 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:19.310156 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:19.310274 #24040]  INFO -- : Started PATCH "/hevents" for 127.0.0.1 at 2015-12-14 19:55:19 -0700
+F, [2015-12-14T19:55:19.312272 #24040] FATAL -- : 
+ActionController::RoutingError (No route matches [PATCH] "/hevents"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-12-14T19:55:57.786381 #24040] DEBUG -- : 
+D, [2015-12-14T19:55:57.786444 #24040] DEBUG -- : 
+I, [2015-12-14T19:55:57.786557 #24040]  INFO -- : Started PATCH "/hevents" for 127.0.0.1 at 2015-12-14 19:55:57 -0700
+F, [2015-12-14T19:55:57.788443 #24040] FATAL -- : 
+ActionController::RoutingError (No route matches [PATCH] "/hevents"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-12-14T19:56:00.997333 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:00.997385 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:00.997470 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:56:00 -0700
+D, [2015-12-14T19:56:01.004707 #24040] DEBUG -- :   [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T19:56:03.626743 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:03.626860 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:03.626943 #24040]  INFO -- : Started POST "/hevents/8" for 127.0.0.1 at 2015-12-14 19:56:03 -0700
+F, [2015-12-14T19:56:03.629388 #24040] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/hevents/8"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-12-14T19:56:38.240355 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:38.240405 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:38.240514 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:56:38 -0700
+D, [2015-12-14T19:56:38.248628 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T19:56:40.919300 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:40.919419 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:40.919538 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:56:40 -0700
+D, [2015-12-14T19:56:40.925567 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T19:56:40.980360 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:40.980423 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:40.980566 #24040]  INFO -- : Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:56:40 -0700
+D, [2015-12-14T19:56:40.988693 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:40.988745 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:40.989082 #24040]  INFO -- : Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:56:40 -0700
+D, [2015-12-14T19:56:40.997728 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:40.997805 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:40.998064 #24040]  INFO -- : Started GET "/assets/hevents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:56:40 -0700
+D, [2015-12-14T19:56:41.010298 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:41.010549 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:41.013479 #24040]  INFO -- : Started GET "/assets/hevents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:56:41 -0700
+D, [2015-12-14T19:56:41.021594 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:41.021645 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:41.021820 #24040]  INFO -- : Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-14 19:56:41 -0700
+D, [2015-12-14T19:56:41.025475 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:41.025600 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:41.025727 #24040]  INFO -- : Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-14 19:56:41 -0700
+D, [2015-12-14T19:56:41.028903 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:41.028984 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:41.029089 #24040]  INFO -- : Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-14 19:56:41 -0700
+D, [2015-12-14T19:56:41.033287 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:41.033348 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:41.033579 #24040]  INFO -- : Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-14 19:56:41 -0700
+D, [2015-12-14T19:56:41.036845 #24040] DEBUG -- : 
+D, [2015-12-14T19:56:41.037008 #24040] DEBUG -- : 
+I, [2015-12-14T19:56:41.037154 #24040]  INFO -- : Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-14 19:56:41 -0700
+D, [2015-12-14T19:57:49.327224 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.327272 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.327361 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:49.333469 #24040] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T19:57:49.384234 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.384336 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.384534 #24040]  INFO -- : Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:49.391772 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.391830 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.391977 #24040]  INFO -- : Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:49.398885 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.398955 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.399189 #24040]  INFO -- : Started GET "/assets/hevents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:49.412965 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.413049 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.413337 #24040]  INFO -- : Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:49.422565 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.424158 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.424311 #24040]  INFO -- : Started GET "/assets/hevents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:49.428368 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.428407 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.428534 #24040]  INFO -- : Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:49.431519 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.431563 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.431819 #24040]  INFO -- : Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:49.434662 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.434823 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.434993 #24040]  INFO -- : Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:49.438094 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:49.438165 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:49.438319 #24040]  INFO -- : Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-14 19:57:49 -0700
+D, [2015-12-14T19:57:53.044885 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:53.044955 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:53.045071 #24040]  INFO -- : Started GET "/hevents/new" for 127.0.0.1 at 2015-12-14 19:57:53 -0700
+D, [2015-12-14T19:57:58.371046 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:58.371097 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:58.371177 #24040]  INFO -- : Started POST "/hevents" for 127.0.0.1 at 2015-12-14 19:57:58 -0700
+D, [2015-12-14T19:57:58.373566 #24040] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-14T19:57:58.374483 #24040] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["key", "bob"], ["value", "vvvvvv"], ["created_at", "2015-12-15 02:57:58.373656"], ["updated_at", "2015-12-15 02:57:58.373656"]]
+D, [2015-12-14T19:57:58.375533 #24040] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2015-12-14T19:57:58.380922 #24040] DEBUG -- : 
+D, [2015-12-14T19:57:58.380975 #24040] DEBUG -- : 
+I, [2015-12-14T19:57:58.381089 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 19:57:58 -0700
+D, [2015-12-14T19:57:58.386804 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T19:58:00.692925 #24040] DEBUG -- : 
+D, [2015-12-14T19:58:00.692978 #24040] DEBUG -- : 
+I, [2015-12-14T19:58:00.693061 #24040]  INFO -- : Started GET "/hevents/8/edit" for 127.0.0.1 at 2015-12-14 19:58:00 -0700
+D, [2015-12-14T19:58:00.695501 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 8]]
+D, [2015-12-14T19:58:04.929680 #24040] DEBUG -- : 
+D, [2015-12-14T19:58:04.929744 #24040] DEBUG -- : 
+I, [2015-12-14T19:58:04.929896 #24040]  INFO -- : Started PATCH "/hevents" for 127.0.0.1 at 2015-12-14 19:58:04 -0700
+F, [2015-12-14T19:58:04.931756 #24040] FATAL -- : 
+ActionController::RoutingError (No route matches [PATCH] "/hevents"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-12-14T20:01:18.370322 #24040] DEBUG -- : 
+D, [2015-12-14T20:01:18.370370 #24040] DEBUG -- : 
+I, [2015-12-14T20:01:18.370460 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:01:18 -0700
+D, [2015-12-14T20:01:18.376072 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:01:21.842571 #24040] DEBUG -- : 
+D, [2015-12-14T20:01:21.842635 #24040] DEBUG -- : 
+I, [2015-12-14T20:01:21.842737 #24040]  INFO -- : Started GET "/hevents/9/edit" for 127.0.0.1 at 2015-12-14 20:01:21 -0700
+D, [2015-12-14T20:01:21.845409 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+D, [2015-12-14T20:01:28.312449 #24040] DEBUG -- : 
+D, [2015-12-14T20:01:28.312507 #24040] DEBUG -- : 
+I, [2015-12-14T20:01:28.312592 #24040]  INFO -- : Started POST "/hevents" for 127.0.0.1 at 2015-12-14 20:01:28 -0700
+D, [2015-12-14T20:01:28.315211 #24040] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-14T20:01:28.316094 #24040] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "bob"], ["value", "uuuuu"], ["created_at", "2015-12-15 03:01:28.315301"], ["updated_at", "2015-12-15 03:01:28.315301"]]
+D, [2015-12-14T20:01:28.316957 #24040] DEBUG -- :   [1m[35m (0.6ms)[0m  commit transaction
+D, [2015-12-14T20:01:28.322533 #24040] DEBUG -- : 
+D, [2015-12-14T20:01:28.322600 #24040] DEBUG -- : 
+I, [2015-12-14T20:01:28.322676 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:01:28 -0700
+D, [2015-12-14T20:01:28.328250 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T20:01:32.265641 #24040] DEBUG -- : 
+D, [2015-12-14T20:01:32.265702 #24040] DEBUG -- : 
+I, [2015-12-14T20:01:32.265825 #24040]  INFO -- : Started GET "/hevents/new" for 127.0.0.1 at 2015-12-14 20:01:32 -0700
+D, [2015-12-14T20:01:41.252793 #24040] DEBUG -- : 
+D, [2015-12-14T20:01:41.252855 #24040] DEBUG -- : 
+I, [2015-12-14T20:01:41.252947 #24040]  INFO -- : Started POST "/hevents" for 127.0.0.1 at 2015-12-14 20:01:41 -0700
+D, [2015-12-14T20:01:41.255650 #24040] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-14T20:01:41.256484 #24040] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "nnnnn"], ["value", "ssssss"], ["created_at", "2015-12-15 03:01:41.255738"], ["updated_at", "2015-12-15 03:01:41.255738"]]
+D, [2015-12-14T20:01:41.257233 #24040] DEBUG -- :   [1m[35m (0.5ms)[0m  commit transaction
+D, [2015-12-14T20:01:41.262978 #24040] DEBUG -- : 
+D, [2015-12-14T20:01:41.263024 #24040] DEBUG -- : 
+I, [2015-12-14T20:01:41.263099 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:01:41 -0700
+D, [2015-12-14T20:01:41.268602 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T20:01:46.322740 #24040] DEBUG -- : 
+D, [2015-12-14T20:01:46.322788 #24040] DEBUG -- : 
+I, [2015-12-14T20:01:46.322868 #24040]  INFO -- : Started DELETE "/hevents/11" for 127.0.0.1 at 2015-12-14 20:01:46 -0700
+D, [2015-12-14T20:01:46.325225 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 11]]
+D, [2015-12-14T20:01:46.325498 #24040] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-14T20:01:46.325929 #24040] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 11]]
+D, [2015-12-14T20:01:46.326710 #24040] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2015-12-14T20:01:46.332251 #24040] DEBUG -- : 
+D, [2015-12-14T20:01:46.332298 #24040] DEBUG -- : 
+I, [2015-12-14T20:01:46.332375 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:01:46 -0700
+D, [2015-12-14T20:01:46.337745 #24040] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:03:10.551862 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.551920 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.552027 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:10.558167 #24040] DEBUG -- :   [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T20:03:10.617023 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.617091 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.617213 #24040]  INFO -- : Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:10.624631 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.624680 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.624798 #24040]  INFO -- : Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:10.633343 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.633473 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.633740 #24040]  INFO -- : Started GET "/assets/hevents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:10.646331 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.647642 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.647849 #24040]  INFO -- : Started GET "/assets/hevents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:10.651756 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.651795 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.651932 #24040]  INFO -- : Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:10.655166 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.655298 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.655425 #24040]  INFO -- : Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:10.658570 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.658612 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.658786 #24040]  INFO -- : Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:10.661693 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.661731 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.661823 #24040]  INFO -- : Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:10.665676 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:10.665778 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:10.665933 #24040]  INFO -- : Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-14 20:03:10 -0700
+D, [2015-12-14T20:03:14.510410 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:14.510475 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:14.510577 #24040]  INFO -- : Started GET "/hevents/7" for 127.0.0.1 at 2015-12-14 20:03:14 -0700
+D, [2015-12-14T20:03:14.513386 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 7]]
+D, [2015-12-14T20:03:17.172971 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:17.173038 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:17.173145 #24040]  INFO -- : Started GET "/hevents/7/edit" for 127.0.0.1 at 2015-12-14 20:03:17 -0700
+D, [2015-12-14T20:03:17.176563 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 7]]
+D, [2015-12-14T20:03:21.141288 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:21.141343 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:21.141434 #24040]  INFO -- : Started POST "/hevents" for 127.0.0.1 at 2015-12-14 20:03:21 -0700
+D, [2015-12-14T20:03:21.144128 #24040] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-14T20:03:21.145130 #24040] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "dd"], ["value", "shhh"], ["created_at", "2015-12-15 03:03:21.144232"], ["updated_at", "2015-12-15 03:03:21.144232"]]
+D, [2015-12-14T20:03:21.146052 #24040] DEBUG -- :   [1m[35m (0.7ms)[0m  commit transaction
+D, [2015-12-14T20:03:21.152588 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:21.152689 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:21.152845 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:03:21 -0700
+D, [2015-12-14T20:03:21.158423 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T20:03:28.023472 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:28.023538 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:28.023651 #24040]  INFO -- : Started GET "/hevents/12/edit" for 127.0.0.1 at 2015-12-14 20:03:28 -0700
+D, [2015-12-14T20:03:28.026353 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 12]]
+D, [2015-12-14T20:03:33.591391 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:33.591453 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:33.591545 #24040]  INFO -- : Started POST "/hevents" for 127.0.0.1 at 2015-12-14 20:03:33 -0700
+D, [2015-12-14T20:03:33.594844 #24040] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-14T20:03:33.595896 #24040] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["key", "dd"], ["value", "jjjj"], ["created_at", "2015-12-15 03:03:33.594945"], ["updated_at", "2015-12-15 03:03:33.594945"]]
+D, [2015-12-14T20:03:33.603157 #24040] DEBUG -- :   [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-14T20:03:33.609116 #24040] DEBUG -- : 
+D, [2015-12-14T20:03:33.609161 #24040] DEBUG -- : 
+I, [2015-12-14T20:03:33.609241 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:03:33 -0700
+D, [2015-12-14T20:03:33.615207 #24040] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:10:45.239285 #24040] DEBUG -- : 
+D, [2015-12-14T20:10:45.239337 #24040] DEBUG -- : 
+I, [2015-12-14T20:10:45.239432 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:10:45 -0700
+F, [2015-12-14T20:10:45.249783 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa7897e10c0>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:14:52.843537 #24040] DEBUG -- : 
+D, [2015-12-14T20:14:52.843588 #24040] DEBUG -- : 
+I, [2015-12-14T20:14:52.843692 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:14:52 -0700
+F, [2015-12-14T20:14:52.852262 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa79198afe0>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:15:13.536470 #24040] DEBUG -- : 
+D, [2015-12-14T20:15:13.536529 #24040] DEBUG -- : 
+I, [2015-12-14T20:15:13.536641 #24040]  INFO -- : Started GET "/events/index" for 127.0.0.1 at 2015-12-14 20:15:13 -0700
+D, [2015-12-14T20:15:13.556110 #24040] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 0]]
+F, [2015-12-14T20:15:13.557298 #24040] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=index):
+  app/controllers/events_controller.rb:35:in `show'
+
+
+D, [2015-12-14T20:16:20.452650 #24040] DEBUG -- : 
+D, [2015-12-14T20:16:20.452699 #24040] DEBUG -- : 
+D, [2015-12-14T20:16:48.749647 #24040] DEBUG -- : 
+D, [2015-12-14T20:16:48.749708 #24040] DEBUG -- : 
+D, [2015-12-14T20:23:14.492471 #24040] DEBUG -- : 
+D, [2015-12-14T20:23:14.492519 #24040] DEBUG -- : 
+D, [2015-12-14T20:23:47.842500 #24040] DEBUG -- : 
+D, [2015-12-14T20:23:47.842552 #24040] DEBUG -- : 
+I, [2015-12-14T20:23:47.842720 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:23:47 -0700
+F, [2015-12-14T20:23:47.855119 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa79227cb30>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:25:05.199823 #24040] DEBUG -- : 
+D, [2015-12-14T20:25:05.199869 #24040] DEBUG -- : 
+I, [2015-12-14T20:25:05.199976 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:25:05 -0700
+D, [2015-12-14T20:25:05.213004 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:25:16.717818 #24040] DEBUG -- : 
+D, [2015-12-14T20:25:16.717872 #24040] DEBUG -- : 
+I, [2015-12-14T20:25:16.717970 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:25:16 -0700
+D, [2015-12-14T20:25:16.719863 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:25:30.011404 #24040] DEBUG -- : 
+D, [2015-12-14T20:25:30.011453 #24040] DEBUG -- : 
+I, [2015-12-14T20:25:30.011554 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:25:30 -0700
+D, [2015-12-14T20:25:30.013533 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:25:33.183227 #24040] DEBUG -- : 
+D, [2015-12-14T20:25:33.183276 #24040] DEBUG -- : 
+I, [2015-12-14T20:25:33.183366 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:25:33 -0700
+D, [2015-12-14T20:25:33.185323 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:27:05.247506 #24040] DEBUG -- : 
+D, [2015-12-14T20:27:05.247567 #24040] DEBUG -- : 
+I, [2015-12-14T20:27:05.247681 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:27:05 -0700
+D, [2015-12-14T20:27:05.249867 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:29:24.086365 #24040] DEBUG -- : 
+D, [2015-12-14T20:29:24.086413 #24040] DEBUG -- : 
+I, [2015-12-14T20:29:24.086503 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:29:24 -0700
+F, [2015-12-14T20:29:24.095802 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa790d6e720>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:29:42.144354 #24040] DEBUG -- : 
+D, [2015-12-14T20:29:42.144400 #24040] DEBUG -- : 
+I, [2015-12-14T20:29:42.144493 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:29:42 -0700
+D, [2015-12-14T20:29:42.155577 #24040] DEBUG -- : --------------------index been called--------------------
+F, [2015-12-14T20:29:42.156708 #24040] FATAL -- : 
+NoMethodError (undefined method `all' for nil:NilClass):
+  app/controllers/events_controller.rb:4:in `index'
+
+
+D, [2015-12-14T20:29:53.192105 #24040] DEBUG -- : 
+D, [2015-12-14T20:29:53.192163 #24040] DEBUG -- : 
+I, [2015-12-14T20:29:53.192264 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:29:53 -0700
+F, [2015-12-14T20:29:53.202108 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa790b5ac90>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:30:45.133072 #24040] DEBUG -- : 
+D, [2015-12-14T20:30:45.133122 #24040] DEBUG -- : 
+I, [2015-12-14T20:30:45.133225 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:30:45 -0700
+F, [2015-12-14T20:30:45.142456 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa7918896f0>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:31:00.303923 #24040] DEBUG -- : 
+D, [2015-12-14T20:31:00.303973 #24040] DEBUG -- : 
+I, [2015-12-14T20:31:00.304056 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:31:00 -0700
+D, [2015-12-14T20:31:00.314704 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:31:06.462093 #24040] DEBUG -- : 
+D, [2015-12-14T20:31:06.462139 #24040] DEBUG -- : 
+I, [2015-12-14T20:31:06.462254 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:31:06 -0700
+D, [2015-12-14T20:31:06.464147 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:31:57.564273 #24040] DEBUG -- : 
+D, [2015-12-14T20:31:57.564377 #24040] DEBUG -- : 
+I, [2015-12-14T20:31:57.564472 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:31:57 -0700
+F, [2015-12-14T20:31:57.573790 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa78c748ef8>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:32:28.270804 #24040] DEBUG -- : 
+D, [2015-12-14T20:32:28.270852 #24040] DEBUG -- : 
+I, [2015-12-14T20:32:28.270949 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:32:28 -0700
+F, [2015-12-14T20:32:28.281080 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa790c86ee8>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:32:31.661783 #24040] DEBUG -- : 
+D, [2015-12-14T20:32:31.661834 #24040] DEBUG -- : 
+I, [2015-12-14T20:32:31.661937 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:32:31 -0700
+D, [2015-12-14T20:32:31.674059 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:32:35.341675 #24040] DEBUG -- : 
+D, [2015-12-14T20:32:35.341727 #24040] DEBUG -- : 
+I, [2015-12-14T20:32:35.341817 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:32:35 -0700
+D, [2015-12-14T20:32:35.344015 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:36:16.047133 #24040] DEBUG -- : 
+D, [2015-12-14T20:36:16.047192 #24040] DEBUG -- : 
+I, [2015-12-14T20:36:16.047290 #24040]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-12-14 20:36:16 -0700
+F, [2015-12-14T20:36:16.057740 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa790cef290>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:36:19.251431 #24040] DEBUG -- : 
+D, [2015-12-14T20:36:19.251482 #24040] DEBUG -- : 
+I, [2015-12-14T20:36:19.251583 #24040]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-12-14 20:36:19 -0700
+D, [2015-12-14T20:36:19.266916 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:37:06.359428 #24040] DEBUG -- : 
+D, [2015-12-14T20:37:06.359607 #24040] DEBUG -- : 
+I, [2015-12-14T20:37:06.359789 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:37:06 -0700
+F, [2015-12-14T20:37:06.370017 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa7896c50d8>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:37:10.289443 #24040] DEBUG -- : 
+D, [2015-12-14T20:37:10.289606 #24040] DEBUG -- : 
+I, [2015-12-14T20:37:10.289863 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:37:10 -0700
+D, [2015-12-14T20:37:10.303212 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:37:10.305028 #24040] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+D, [2015-12-14T20:37:10.305124 #24040] DEBUG -- : ----found 6 index been called--------------------
+D, [2015-12-14T20:37:10.305330 #24040] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "events"
+D, [2015-12-14T20:37:39.463786 #24040] DEBUG -- : 
+D, [2015-12-14T20:37:39.463847 #24040] DEBUG -- : 
+I, [2015-12-14T20:37:39.463950 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:37:39 -0700
+F, [2015-12-14T20:37:39.474354 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa78aee6338>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:37:43.047601 #24040] DEBUG -- : 
+D, [2015-12-14T20:37:43.047718 #24040] DEBUG -- : 
+I, [2015-12-14T20:37:43.047892 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:37:43 -0700
+D, [2015-12-14T20:37:43.060034 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:37:43.061687 #24040] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+D, [2015-12-14T20:37:43.061819 #24040] DEBUG -- : ----found 6 index been called--------------------
+D, [2015-12-14T20:37:43.062106 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:37:50.521089 #24040] DEBUG -- : 
+D, [2015-12-14T20:37:50.521161 #24040] DEBUG -- : 
+I, [2015-12-14T20:37:50.521297 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:37:50 -0700
+D, [2015-12-14T20:37:50.523676 #24040] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:37:50.524295 #24040] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+D, [2015-12-14T20:37:50.524376 #24040] DEBUG -- : ----found 6 index been called--------------------
+D, [2015-12-14T20:37:50.524756 #24040] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:42:21.841252 #28077] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2015-12-14T20:42:21.847176 #28077]  INFO -- : Migrating to CreateEvents (20151215034205)
+D, [2015-12-14T20:42:21.847659 #28077] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-14T20:42:21.849506 #28077] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "eventData" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+D, [2015-12-14T20:42:21.849991 #28077] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-14T20:44:55.046049 #24040] DEBUG -- : 
+D, [2015-12-14T20:44:55.046117 #24040] DEBUG -- : 
+I, [2015-12-14T20:44:55.046299 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:44:55 -0700
+F, [2015-12-14T20:44:55.058750 #24040] FATAL -- : 
+NameError (undefined local variable or method `event' for #<ActionDispatch::Routing::Mapper:0x007fa7920ef1a0>):
+  config/routes.rb:11:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+D, [2015-12-14T20:44:59.614025 #24040] DEBUG -- : 
+D, [2015-12-14T20:44:59.614085 #24040] DEBUG -- : 
+I, [2015-12-14T20:44:59.614196 #24040]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:44:59 -0700
+D, [2015-12-14T20:44:59.616124 #24040] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+F, [2015-12-14T20:44:59.616986 #24040] FATAL -- : 
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-12-14T20:45:20.636425 #24040] DEBUG -- : 
+D, [2015-12-14T20:45:20.636473 #24040] DEBUG -- : 
+I, [2015-12-14T20:45:20.636569 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:45:20 -0700
+D, [2015-12-14T20:45:20.638510 #24040] DEBUG -- :   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+F, [2015-12-14T20:45:20.639523 #24040] FATAL -- : 
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-12-14T20:45:20.835498 #24040] DEBUG -- : 
+D, [2015-12-14T20:45:20.835544 #24040] DEBUG -- : 
+I, [2015-12-14T20:45:20.835840 #24040]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:45:20 -0700
+D, [2015-12-14T20:45:20.837747 #24040] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+F, [2015-12-14T20:45:20.839026 #24040] FATAL -- : 
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-12-14T20:47:12.516374 #28292] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2015-12-14T20:47:12.521883 #28292]  INFO -- : Migrating to CreateEvents (20151215034205)
+D, [2015-12-14T20:47:12.523448 #28292] DEBUG -- :   [1m[35m (0.2ms)[0m  begin transaction
+D, [2015-12-14T20:47:12.525883 #28292] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "eventData" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+D, [2015-12-14T20:47:12.526310 #28292] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-14T20:47:44.888443 #28318] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2015-12-14T20:47:44.897644 #28318]  INFO -- : Migrating to CreateEvents (20151215034205)
+D, [2015-12-14T20:47:44.898325 #28318] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-14T20:47:44.900190 #28318] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "eventData" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+D, [2015-12-14T20:47:44.905185 #28318] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151215034205"]]
+D, [2015-12-14T20:47:44.906188 #28318] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+D, [2015-12-14T20:47:44.910231 #28318] DEBUG -- :   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+D, [2015-12-14T20:48:38.226948 #28326] DEBUG -- : 
+D, [2015-12-14T20:48:38.226999 #28326] DEBUG -- : 
+I, [2015-12-14T20:48:38.227233 #28326]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:48:38 -0700
+D, [2015-12-14T20:48:38.350875 #28326] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2015-12-14T20:48:38.388758 #28326] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:48:41.299070 #28326] DEBUG -- : 
+D, [2015-12-14T20:48:41.299136 #28326] DEBUG -- : 
+I, [2015-12-14T20:48:41.299255 #28326]  INFO -- : Started GET "/hevents/new" for 127.0.0.1 at 2015-12-14 20:48:41 -0700
+D, [2015-12-14T20:48:49.566749 #28326] DEBUG -- : 
+D, [2015-12-14T20:48:49.566799 #28326] DEBUG -- : 
+I, [2015-12-14T20:48:49.566896 #28326]  INFO -- : Started POST "/hevents" for 127.0.0.1 at 2015-12-14 20:48:49 -0700
+D, [2015-12-14T20:48:49.570124 #28326] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-14T20:48:49.572815 #28326] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("eventData", "created_at", "updated_at") VALUES (?, ?, ?)  [["eventData", "event number 1"], ["created_at", "2015-12-15 03:48:49.570246"], ["updated_at", "2015-12-15 03:48:49.570246"]]
+D, [2015-12-14T20:48:49.573521 #28326] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+D, [2015-12-14T20:48:49.579771 #28326] DEBUG -- : 
+D, [2015-12-14T20:48:49.579817 #28326] DEBUG -- : 
+I, [2015-12-14T20:48:49.579899 #28326]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:48:49 -0700
+D, [2015-12-14T20:48:49.585632 #28326] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:48:53.782736 #28326] DEBUG -- : 
+D, [2015-12-14T20:48:53.782803 #28326] DEBUG -- : 
+I, [2015-12-14T20:48:53.782893 #28326]  INFO -- : Started GET "/hevents/1" for 127.0.0.1 at 2015-12-14 20:48:53 -0700
+D, [2015-12-14T20:48:53.797823 #28326] DEBUG -- :   [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2015-12-14T20:48:57.719214 #28326] DEBUG -- : 
+D, [2015-12-14T20:48:57.719262 #28326] DEBUG -- : 
+I, [2015-12-14T20:48:57.719346 #28326]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 20:48:57 -0700
+D, [2015-12-14T20:48:57.727146 #28326] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:49:04.221030 #28326] DEBUG -- : 
+D, [2015-12-14T20:49:04.221101 #28326] DEBUG -- : 
+I, [2015-12-14T20:49:04.221278 #28326]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:49:04 -0700
+D, [2015-12-14T20:49:04.231752 #28326] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:49:04.232755 #28326] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+D, [2015-12-14T20:49:04.232837 #28326] DEBUG -- : ----found 1 index been called--------------------
+D, [2015-12-14T20:49:04.233150 #28326] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T20:52:56.734965 #28592] DEBUG -- :   [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-14T20:52:56.735694 #28592] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-14T20:52:56.736854 #28592] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-14T20:52:56.738198 #28592] DEBUG -- :   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+I, [2015-12-14T20:52:56.743083 #28592]  INFO -- : Migrating to CreateEvents (20151215034205)
+D, [2015-12-14T20:52:56.743715 #28592] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-14T20:52:56.745411 #28592] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+D, [2015-12-14T20:52:56.756655 #28592] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151215034205"]]
+D, [2015-12-14T20:52:56.757608 #28592] DEBUG -- :   [1m[35m (0.6ms)[0m  commit transaction
+D, [2015-12-14T20:52:56.763365 #28592] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2015-12-14T20:54:47.966195 #28326] DEBUG -- : 
+D, [2015-12-14T20:54:47.966242 #28326] DEBUG -- : 
+I, [2015-12-14T20:54:47.966336 #28326]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 20:54:47 -0700
+D, [2015-12-14T20:54:47.982927 #28326] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2015-12-14T20:54:48.022294 #28326] DEBUG -- : --------------------index been called--------------------
+D, [2015-12-14T20:54:48.024681 #28326] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+D, [2015-12-14T20:54:48.024775 #28326] DEBUG -- : ----found 0 index been called--------------------
+D, [2015-12-14T20:54:48.025089 #28326] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-14T20:55:56.079525 #28326] DEBUG -- : 
+D, [2015-12-14T20:55:56.079841 #28326] DEBUG -- : 
+I, [2015-12-14T20:55:56.079952 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 20:55:56 -0700
+F, [2015-12-14T20:55:56.084782 #28326] FATAL -- : 
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-12-14T20:55:56.227068 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T20:56:41.055566 #28326] DEBUG -- : 
+D, [2015-12-14T20:56:41.055639 #28326] DEBUG -- : 
+I, [2015-12-14T20:56:41.055779 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 20:56:41 -0700
+F, [2015-12-14T20:56:41.061487 #28326] FATAL -- : 
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-12-14T20:56:41.216920 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:11:40.144127 #28326] DEBUG -- : 
+D, [2015-12-14T21:11:40.144620 #28326] DEBUG -- : 
+I, [2015-12-14T21:11:40.144794 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:11:40 -0700
+F, [2015-12-14T21:11:40.185245 #28326] FATAL -- : 
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-12-14T21:11:40.299926 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:20:46.844302 #28326] DEBUG -- : 
+D, [2015-12-14T21:20:46.844605 #28326] DEBUG -- : 
+I, [2015-12-14T21:20:46.844760 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:20:46 -0700
+F, [2015-12-14T21:20:46.877164 #28326] FATAL -- : 
+ActionController::RoutingError (The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.):
+  app/controllers/events_controller.rb:2:in `<class:EventsController>'
+  app/controllers/events_controller.rb:1:in `<top (required)>'
+
+
+I, [2015-12-14T21:20:47.015853 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:21:51.351255 #28326] DEBUG -- : 
+D, [2015-12-14T21:21:51.351703 #28326] DEBUG -- : 
+I, [2015-12-14T21:21:51.351867 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:21:51 -0700
+F, [2015-12-14T21:21:51.378752 #28326] FATAL -- : 
+ActionController::RoutingError (The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.):
+  app/controllers/events_controller.rb:2:in `<class:EventsController>'
+  app/controllers/events_controller.rb:1:in `<top (required)>'
+
+
+I, [2015-12-14T21:21:51.508109 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:22:37.360751 #28326] DEBUG -- : 
+D, [2015-12-14T21:22:37.360797 #28326] DEBUG -- : 
+I, [2015-12-14T21:22:37.360892 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:22:37 -0700
+F, [2015-12-14T21:22:37.369673 #28326] FATAL -- : 
+ActionController::RoutingError (The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.):
+  app/controllers/events_controller.rb:2:in `<class:EventsController>'
+  app/controllers/events_controller.rb:1:in `<top (required)>'
+
+
+I, [2015-12-14T21:22:37.508780 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:25:03.349008 #28326] DEBUG -- : 
+D, [2015-12-14T21:25:03.349058 #28326] DEBUG -- : 
+I, [2015-12-14T21:25:03.349151 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:25:03 -0700
+F, [2015-12-14T21:25:03.373169 #28326] FATAL -- : 
+ActionController::RoutingError (uninitialized constant ActionController::RespondWith):
+  app/controllers/events_controller.rb:2:in `<class:EventsController>'
+  app/controllers/events_controller.rb:1:in `<top (required)>'
+
+
+I, [2015-12-14T21:25:03.492325 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:25:12.996716 #28326] DEBUG -- : 
+D, [2015-12-14T21:25:12.996763 #28326] DEBUG -- : 
+I, [2015-12-14T21:25:12.996868 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:25:12 -0700
+F, [2015-12-14T21:25:13.002183 #28326] FATAL -- : 
+ActionController::RoutingError (uninitialized constant ActionController::RespondWith):
+  app/controllers/events_controller.rb:2:in `<class:EventsController>'
+  app/controllers/events_controller.rb:1:in `<top (required)>'
+
+
+I, [2015-12-14T21:25:13.121939 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:35:49.054366 #28326] DEBUG -- : 
+D, [2015-12-14T21:35:49.054415 #28326] DEBUG -- : 
+I, [2015-12-14T21:35:49.054525 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:35:49 -0700
+F, [2015-12-14T21:35:49.086080 #28326] FATAL -- : 
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.5) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-12-14T21:35:49.210427 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:38:13.260757 #28326] DEBUG -- : 
+D, [2015-12-14T21:38:13.261271 #28326] DEBUG -- : 
+I, [2015-12-14T21:38:13.261478 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:38:13 -0700
+F, [2015-12-14T21:38:13.293460 #28326] FATAL -- : 
+ActionView::MissingTemplate (Missing template events/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wroberts/myGit/oracleRestApi/events/app/views"
+):
+  app/controllers/events_controller.rb:22:in `create'
+
+
+I, [2015-12-14T21:38:13.447500 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:43:08.003426 #28326] DEBUG -- : 
+D, [2015-12-14T21:43:08.003530 #28326] DEBUG -- : 
+I, [2015-12-14T21:43:08.003668 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:43:08 -0700
+F, [2015-12-14T21:43:08.042302 #28326] FATAL -- : 
+ArgumentError (too few arguments):
+  app/controllers/events_controller.rb:22:in `format'
+  app/controllers/events_controller.rb:22:in `create'
+
+
+I, [2015-12-14T21:43:08.165699 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:49:09.553110 #28326] DEBUG -- : 
+D, [2015-12-14T21:49:09.553166 #28326] DEBUG -- : 
+I, [2015-12-14T21:49:09.553286 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:49:09 -0700
+F, [2015-12-14T21:49:09.561064 #28326] FATAL -- : 
+ArgumentError (too few arguments):
+  app/controllers/events_controller.rb:22:in `format'
+  app/controllers/events_controller.rb:22:in `create'
+
+
+I, [2015-12-14T21:49:09.683157 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:50:39.960204 #28326] DEBUG -- : 
+D, [2015-12-14T21:50:39.960252 #28326] DEBUG -- : 
+I, [2015-12-14T21:50:39.960381 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:50:39 -0700
+F, [2015-12-14T21:50:39.991030 #28326] FATAL -- : 
+ArgumentError (too few arguments):
+  app/controllers/events_controller.rb:22:in `format'
+  app/controllers/events_controller.rb:22:in `create'
+
+
+I, [2015-12-14T21:50:40.108065 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:51:44.325122 #28326] DEBUG -- : 
+D, [2015-12-14T21:51:44.325180 #28326] DEBUG -- : 
+I, [2015-12-14T21:51:44.325294 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:51:44 -0700
+F, [2015-12-14T21:51:44.363740 #28326] FATAL -- : 
+NameError (undefined local variable or method `json' for #<EventsController:0x007f8ce0fd15a0>):
+  app/controllers/events_controller.rb:22:in `create'
+
+
+I, [2015-12-14T21:51:44.490688 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T21:52:27.964026 #28326] DEBUG -- : 
+D, [2015-12-14T21:52:27.964080 #28326] DEBUG -- : 
+I, [2015-12-14T21:52:27.964191 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 21:52:27 -0700
+F, [2015-12-14T21:52:27.995730 #28326] FATAL -- : 
+ArgumentError (too few arguments):
+  app/controllers/events_controller.rb:22:in `format'
+  app/controllers/events_controller.rb:22:in `create'
+
+
+I, [2015-12-14T21:52:28.119452 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:04:25.975356 #28326] DEBUG -- : 
+D, [2015-12-14T22:04:25.975404 #28326] DEBUG -- : 
+I, [2015-12-14T22:04:25.975527 #28326]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-12-14 22:04:25 -0700
+D, [2015-12-14T22:04:25.987900 #28326] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T22:08:47.973726 #28326] DEBUG -- : 
+D, [2015-12-14T22:08:47.973786 #28326] DEBUG -- : 
+I, [2015-12-14T22:08:47.973896 #28326]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 22:08:47 -0700
+D, [2015-12-14T22:08:47.977828 #28326] DEBUG -- : ---------> index -- top
+D, [2015-12-14T22:08:47.978908 #28326] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+D, [2015-12-14T22:08:47.979092 #28326] DEBUG -- : ---------> index -- found 0 events
+D, [2015-12-14T22:08:47.979693 #28326] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T22:10:37.596299 #28326] DEBUG -- : 
+D, [2015-12-14T22:10:37.596353 #28326] DEBUG -- : 
+I, [2015-12-14T22:10:37.596453 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:10:37 -0700
+D, [2015-12-14T22:10:37.632278 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:10:37.651392 #28326] FATAL -- : 
+ActionView::MissingTemplate (Missing template events/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wroberts/myGit/oracleRestApi/events/app/views"
+):
+  actionview (4.2.5) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.5) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.5) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-12-14T22:10:37.800696 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:11:56.738546 #28326] DEBUG -- : 
+D, [2015-12-14T22:11:56.738660 #28326] DEBUG -- : 
+I, [2015-12-14T22:11:56.738802 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:11:56 -0700
+D, [2015-12-14T22:11:56.745715 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:11:56.765447 #28326] FATAL -- : 
+ActionView::MissingTemplate (Missing template events/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wroberts/myGit/oracleRestApi/events/app/views"
+):
+  actionview (4.2.5) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.5) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.5) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wroberts/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-12-14T22:11:56.914594 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:16:31.024606 #28326] DEBUG -- : 
+D, [2015-12-14T22:16:31.024656 #28326] DEBUG -- : 
+I, [2015-12-14T22:16:31.024759 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:16:31 -0700
+D, [2015-12-14T22:16:31.059230 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:16:31.081750 #28326] FATAL -- : 
+ActionView::MissingTemplate (Missing template events/ok, application/ok with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wroberts/myGit/oracleRestApi/events/app/views"
+):
+  app/controllers/events_controller.rb:26:in `create'
+
+
+I, [2015-12-14T22:16:31.235798 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:17:20.556735 #28326] DEBUG -- : 
+D, [2015-12-14T22:17:20.556801 #28326] DEBUG -- : 
+I, [2015-12-14T22:17:20.556968 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:17:20 -0700
+D, [2015-12-14T22:17:20.589826 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:17:20.591013 #28326] FATAL -- : 
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/events_controller.rb:26:in `create'
+
+
+I, [2015-12-14T22:17:20.708988 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:18:28.643549 #28326] DEBUG -- : 
+D, [2015-12-14T22:18:28.643597 #28326] DEBUG -- : 
+I, [2015-12-14T22:18:28.643692 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:18:28 -0700
+F, [2015-12-14T22:18:28.678503 #28326] FATAL -- : 
+ArgumentError (too few arguments):
+  app/controllers/events_controller.rb:22:in `format'
+  app/controllers/events_controller.rb:22:in `create'
+
+
+I, [2015-12-14T22:18:28.798591 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:23:12.296261 #28326] DEBUG -- : 
+D, [2015-12-14T22:23:12.296313 #28326] DEBUG -- : 
+I, [2015-12-14T22:23:12.296441 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:23:12 -0700
+D, [2015-12-14T22:23:12.331168 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:23:12.332698 #28326] FATAL -- : 
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/events_controller.rb:25:in `create'
+
+
+I, [2015-12-14T22:23:12.449722 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:23:59.808353 #28326] DEBUG -- : 
+D, [2015-12-14T22:23:59.808425 #28326] DEBUG -- : 
+I, [2015-12-14T22:23:59.808532 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:23:59 -0700
+D, [2015-12-14T22:23:59.838872 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:23:59.839993 #28326] FATAL -- : 
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/events_controller.rb:26:in `block (2 levels) in create'
+  app/controllers/events_controller.rb:25:in `create'
+
+
+I, [2015-12-14T22:23:59.974614 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:25:09.570591 #28326] DEBUG -- : 
+D, [2015-12-14T22:25:09.570650 #28326] DEBUG -- : 
+I, [2015-12-14T22:25:09.570762 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:25:09 -0700
+D, [2015-12-14T22:25:09.602250 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:25:09.609141 #28326] FATAL -- : 
+NoMethodError (undefined method `responds_to' for #<EventsController:0x007f8ce98aaa70>):
+  app/controllers/events_controller.rb:25:in `create'
+
+
+I, [2015-12-14T22:25:09.728217 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:28:04.206182 #28326] DEBUG -- : 
+D, [2015-12-14T22:28:04.206231 #28326] DEBUG -- : 
+I, [2015-12-14T22:28:04.206331 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:28:04 -0700
+D, [2015-12-14T22:28:04.239387 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:28:04.241791 #28326] FATAL -- : 
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/events_controller.rb:27:in `create'
+
+
+I, [2015-12-14T22:28:04.366748 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:28:57.138063 #28326] DEBUG -- : 
+D, [2015-12-14T22:28:57.138114 #28326] DEBUG -- : 
+I, [2015-12-14T22:28:57.138213 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:28:57 -0700
+D, [2015-12-14T22:28:57.171501 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:28:57.173218 #28326] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/events_controller.rb:27:in `create'
+
+
+I, [2015-12-14T22:28:57.299770 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:29:53.444806 #28326] DEBUG -- : 
+D, [2015-12-14T22:29:53.444908 #28326] DEBUG -- : 
+I, [2015-12-14T22:29:53.445009 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:29:53 -0700
+D, [2015-12-14T22:29:53.475594 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+D, [2015-12-14T22:30:40.513630 #28326] DEBUG -- : 
+D, [2015-12-14T22:30:40.513680 #28326] DEBUG -- : 
+I, [2015-12-14T22:30:40.513775 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:30:40 -0700
+D, [2015-12-14T22:30:40.520306 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+D, [2015-12-14T22:31:14.241458 #28326] DEBUG -- : 
+D, [2015-12-14T22:31:14.241515 #28326] DEBUG -- : 
+I, [2015-12-14T22:31:14.241652 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:31:14 -0700
+D, [2015-12-14T22:31:14.277362 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:31:14.283876 #28326] FATAL -- : 
+ActionView::MissingTemplate (Missing template events/create, application/create with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wroberts/myGit/oracleRestApi/events/app/views"
+):
+  app/controllers/events_controller.rb:24:in `block (2 levels) in create'
+  app/controllers/events_controller.rb:23:in `create'
+
+
+I, [2015-12-14T22:31:14.444886 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:32:01.084076 #28326] DEBUG -- : 
+D, [2015-12-14T22:32:01.084126 #28326] DEBUG -- : 
+I, [2015-12-14T22:32:01.084256 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:32:01 -0700
+D, [2015-12-14T22:32:01.118406 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+D, [2015-12-14T22:34:43.843669 #28326] DEBUG -- : 
+D, [2015-12-14T22:34:43.843739 #28326] DEBUG -- : 
+I, [2015-12-14T22:34:43.843885 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:34:43 -0700
+D, [2015-12-14T22:34:43.877057 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:34:43.878316 #28326] FATAL -- : 
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:34:44.005104 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:34:59.465393 #28326] DEBUG -- : 
+D, [2015-12-14T22:34:59.465441 #28326] DEBUG -- : 
+I, [2015-12-14T22:34:59.465540 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:34:59 -0700
+D, [2015-12-14T22:34:59.467536 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:34:59.468690 #28326] FATAL -- : 
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:34:59.598564 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:36:17.550276 #28326] DEBUG -- : 
+D, [2015-12-14T22:36:17.550329 #28326] DEBUG -- : 
+I, [2015-12-14T22:36:17.550454 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:36:17 -0700
+D, [2015-12-14T22:36:17.580202 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:36:17.581458 #28326] FATAL -- : 
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:36:17.714670 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:37:00.191147 #28326] DEBUG -- : 
+D, [2015-12-14T22:37:00.191196 #28326] DEBUG -- : 
+I, [2015-12-14T22:37:00.191291 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:37:00 -0700
+D, [2015-12-14T22:37:00.222513 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE"}
+D, [2015-12-14T22:39:10.706463 #28326] DEBUG -- : 
+D, [2015-12-14T22:39:10.706674 #28326] DEBUG -- : 
+I, [2015-12-14T22:39:10.706894 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:39:10 -0700
+D, [2015-12-14T22:39:10.736541 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE"}
+F, [2015-12-14T22:39:10.737654 #28326] FATAL -- : 
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:39:10.872392 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:40:40.144670 #28326] DEBUG -- : 
+D, [2015-12-14T22:40:40.144718 #28326] DEBUG -- : 
+I, [2015-12-14T22:40:40.144813 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:40:40 -0700
+F, [2015-12-14T22:40:40.184518 #28326] FATAL -- : 
+NoMethodError (undefined method `type' for #<EventsController:0x007f8ce9983960>):
+  app/controllers/events_controller.rb:22:in `create'
+
+
+I, [2015-12-14T22:40:40.303794 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:41:38.297010 #28326] DEBUG -- : 
+D, [2015-12-14T22:41:38.297115 #28326] DEBUG -- : 
+I, [2015-12-14T22:41:38.297259 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:41:38 -0700
+D, [2015-12-14T22:41:38.329480 #28326] DEBUG -- : ---------> create -- top -- with params : ActionController::Parameters
+F, [2015-12-14T22:41:38.330669 #28326] FATAL -- : 
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:41:38.463167 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:42:50.173158 #28326] DEBUG -- : 
+D, [2015-12-14T22:42:50.173210 #28326] DEBUG -- : 
+I, [2015-12-14T22:42:50.173314 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:42:50 -0700
+D, [2015-12-14T22:42:50.203833 #28326] DEBUG -- : ---------> create -- top -- with params : String
+F, [2015-12-14T22:42:50.205081 #28326] FATAL -- : 
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:42:50.328080 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:43:28.735755 #28326] DEBUG -- : 
+D, [2015-12-14T22:43:28.735817 #28326] DEBUG -- : 
+I, [2015-12-14T22:43:28.735961 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:43:28 -0700
+D, [2015-12-14T22:43:28.768239 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE"}
+F, [2015-12-14T22:43:28.769773 #28326] FATAL -- : 
+JSON::ParserError (757: unexpected token at '{"data"=>"NAME is now at LATITUDE/LONGITUDE"}'):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:43:28.900346 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:44:17.811634 #28326] DEBUG -- : 
+D, [2015-12-14T22:44:17.811685 #28326] DEBUG -- : 
+I, [2015-12-14T22:44:17.811786 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:44:17 -0700
+D, [2015-12-14T22:44:17.843100 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:44:17.845051 #28326] FATAL -- : 
+JSON::ParserError (757: unexpected token at '{"data"=>"NAME is now at LATITUDE/LONGITUDE"}'):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:44:17.969047 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:44:58.589962 #28326] DEBUG -- : 
+D, [2015-12-14T22:44:58.590035 #28326] DEBUG -- : 
+I, [2015-12-14T22:44:58.590203 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:44:58 -0700
+D, [2015-12-14T22:44:58.624857 #28326] DEBUG -- : ---------> create -- top -- with params : {"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}
+F, [2015-12-14T22:44:58.626507 #28326] FATAL -- : 
+JSON::ParserError (757: unexpected token at '{"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}'):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:44:58.758178 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:46:22.603213 #28326] DEBUG -- : 
+D, [2015-12-14T22:46:22.603344 #28326] DEBUG -- : 
+I, [2015-12-14T22:46:22.603471 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:46:22 -0700
+D, [2015-12-14T22:46:22.640775 #28326] DEBUG -- : ---------> create -- top -- with params : ({"data"=>"NAME is now at LATITUDE/LONGITUDE"})
+F, [2015-12-14T22:46:22.642817 #28326] FATAL -- : 
+JSON::ParserError (757: unexpected token at '{"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}'):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:46:22.756422 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:47:57.093284 #28326] DEBUG -- : 
+D, [2015-12-14T22:47:57.093352 #28326] DEBUG -- : 
+I, [2015-12-14T22:47:57.093448 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:47:57 -0700
+D, [2015-12-14T22:47:57.125439 #28326] DEBUG -- : ---------> create -- top -- with params : ({"data":"NAME is now at LATITUDE/LONGITUDE"})
+F, [2015-12-14T22:47:57.126606 #28326] FATAL -- : 
+JSON::ParserError (757: unexpected token at '{"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}'):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:47:57.269685 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:49:52.894928 #28326] DEBUG -- : 
+D, [2015-12-14T22:49:52.894988 #28326] DEBUG -- : 
+I, [2015-12-14T22:49:52.895103 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:49:52 -0700
+D, [2015-12-14T22:49:52.897431 #28326] DEBUG -- : ---------> create -- top -- with params : ({"data":"NAME is now at LATITUDE/LONGITUDE"})
+F, [2015-12-14T22:49:52.902167 #28326] FATAL -- : 
+JSON::ParserError (757: unexpected token at '{"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}}'):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:49:53.021714 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:50:20.332192 #28326] DEBUG -- : 
+D, [2015-12-14T22:50:20.332249 #28326] DEBUG -- : 
+I, [2015-12-14T22:50:20.332338 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:50:20 -0700
+D, [2015-12-14T22:50:20.367071 #28326] DEBUG -- : ---------> create -- top -- with params : ({"data":"NAME is now at LATITUDE/LONGITUDE"})
+D, [2015-12-14T22:52:35.882194 #28326] DEBUG -- : 
+D, [2015-12-14T22:52:35.882252 #28326] DEBUG -- : 
+I, [2015-12-14T22:52:35.882358 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:52:35 -0700
+D, [2015-12-14T22:52:35.916567 #28326] DEBUG -- : ---------> create -- top -- with params : ({"data":"NAME is now at LATITUDE/LONGITUDE"})
+F, [2015-12-14T22:52:35.917828 #28326] FATAL -- : 
+TypeError (no implicit conversion of ActionDispatch::Request into String):
+  app/controllers/events_controller.rb:24:in `create'
+
+
+I, [2015-12-14T22:52:36.050719 #28326]  INFO -- : Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f8ce1ba4ee0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f8ce1ba4b70 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f8ce1b85928 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+D, [2015-12-14T22:54:26.352733 #28326] DEBUG -- : 
+D, [2015-12-14T22:54:26.352796 #28326] DEBUG -- : 
+I, [2015-12-14T22:54:26.352914 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:54:26 -0700
+D, [2015-12-14T22:54:26.384835 #28326] DEBUG -- : ---------> create -- top -- with params : ({"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}})
+D, [2015-12-14T22:56:38.373820 #28326] DEBUG -- : 
+D, [2015-12-14T22:56:38.373875 #28326] DEBUG -- : 
+I, [2015-12-14T22:56:38.373979 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:56:38 -0700
+D, [2015-12-14T22:56:38.409846 #28326] DEBUG -- : ---------> create -- top -- with params : ({"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}})
+D, [2015-12-14T22:56:38.409933 #28326] DEBUG -- : ---------> create print some json (NAME is now at LATITUDE/LONGITUDE)
+D, [2015-12-14T22:59:26.686879 #28326] DEBUG -- : 
+D, [2015-12-14T22:59:26.686931 #28326] DEBUG -- : 
+I, [2015-12-14T22:59:26.687033 #28326]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-14 22:59:26 -0700
+D, [2015-12-14T22:59:26.717336 #28326] DEBUG -- : ---------> create -- top -- with params : ({"data"=>"NAME is now at LATITUDE/LONGITUDE", "controller"=>"events", "action"=>"create", "event"=>{"data"=>"NAME is now at LATITUDE/LONGITUDE"}})
+D, [2015-12-14T22:59:26.717640 #28326] DEBUG -- : ---------> create print some json (NAME is now at LATITUDE/LONGITUDE)
+D, [2015-12-14T22:59:26.720933 #28326] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-14T22:59:26.722142 #28326] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("data", "created_at", "updated_at") VALUES (?, ?, ?)  [["data", "NAME is now at LATITUDE/LONGITUDE"], ["created_at", "2015-12-15 05:59:26.721062"], ["updated_at", "2015-12-15 05:59:26.721062"]]
+D, [2015-12-14T22:59:26.723373 #28326] DEBUG -- :   [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+D, [2015-12-14T22:59:42.322658 #28326] DEBUG -- : 
+D, [2015-12-14T22:59:42.322707 #28326] DEBUG -- : 
+I, [2015-12-14T22:59:42.322805 #28326]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-12-14 22:59:42 -0700
+D, [2015-12-14T22:59:42.332589 #28326] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T22:59:52.631717 #28326] DEBUG -- : 
+D, [2015-12-14T22:59:52.631771 #28326] DEBUG -- : 
+I, [2015-12-14T22:59:52.631879 #28326]  INFO -- : Started GET "/hevents/1" for 127.0.0.1 at 2015-12-14 22:59:52 -0700
+D, [2015-12-14T22:59:52.635176 #28326] DEBUG -- :   [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2015-12-14T22:59:56.246197 #28326] DEBUG -- : 
+D, [2015-12-14T22:59:56.246264 #28326] DEBUG -- : 
+I, [2015-12-14T22:59:56.246371 #28326]  INFO -- : Started GET "/hevents" for 127.0.0.1 at 2015-12-14 22:59:56 -0700
+D, [2015-12-14T22:59:56.255141 #28326] DEBUG -- :   [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-14T23:01:53.732506 #28326] DEBUG -- : 
+D, [2015-12-14T23:01:53.732606 #28326] DEBUG -- : 
+I, [2015-12-14T23:01:53.732745 #28326]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-14 23:01:53 -0700
+D, [2015-12-14T23:01:53.760738 #28326] DEBUG -- : ---------> index -- top
+D, [2015-12-14T23:01:53.762901 #28326] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+D, [2015-12-14T23:01:53.763026 #28326] DEBUG -- : ---------> index -- found 1 events
+D, [2015-12-14T23:01:53.763310 #28326] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
