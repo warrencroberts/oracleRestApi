@@ -7046,3 +7046,104 @@ D, [2015-12-22T14:27:01.331985 #22323] DEBUG -- :   [1m[35mEvent Load (0.2ms)
 D, [2015-12-22T14:27:01.333230 #22323] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
 D, [2015-12-22T14:27:01.336707 #22323] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  UPDATE "events" SET "data" = ?, "updated_at" = ? WHERE "events"."id" = ?  [["data", "NAME-20-2 is now at LATITUDE/LONGITUDE"], ["updated_at", "2015-12-22 21:27:01.333740"], ["id", 20]]
 D, [2015-12-22T14:27:01.338538 #22323] DEBUG -- :   [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T14:32:34.938585 #23052] DEBUG -- : 
+D, [2015-12-22T14:32:34.938661 #23052] DEBUG -- : 
+I, [2015-12-22T14:32:34.938855 #23052]  INFO -- : Started DELETE "/events" for 127.0.0.1 at 2015-12-22 14:32:34 -0700
+D, [2015-12-22T14:32:35.054824 #23052] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2015-12-22T14:32:35.108405 #23052] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-22T14:32:35.116090 #23052] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T14:32:35.118257 #23052] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 19]]
+D, [2015-12-22T14:32:35.119322 #23052] DEBUG -- :   [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T14:32:35.119559 #23052] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T14:32:35.120141 #23052] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 20]]
+D, [2015-12-22T14:32:35.120855 #23052] DEBUG -- :   [1m[35m (0.6ms)[0m  commit transaction
+D, [2015-12-22T14:33:03.352055 #23052] DEBUG -- : 
+D, [2015-12-22T14:33:03.352113 #23052] DEBUG -- : 
+I, [2015-12-22T14:33:03.352242 #23052]  INFO -- : Started DELETE "/events/5" for 127.0.0.1 at 2015-12-22 14:33:03 -0700
+D, [2015-12-22T14:33:03.364272 #23052] DEBUG -- :   [1m[36mEvent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2015-12-22T14:33:21.584353 #23052] DEBUG -- : 
+D, [2015-12-22T14:33:21.584404 #23052] DEBUG -- : 
+I, [2015-12-22T14:33:21.584542 #23052]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-22 14:33:21 -0700
+D, [2015-12-22T14:33:21.587487 #23052] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T14:33:21.590135 #23052] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("data", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["data", "NAME is now at LATITUDE/LONGITUDE"], ["created_at", "2015-12-22 21:33:21.589175"], ["updated_at", "2015-12-22 21:33:21.589175"]]
+D, [2015-12-22T14:33:21.591108 #23052] DEBUG -- :   [1m[35m (0.7ms)[0m  commit transaction
+D, [2015-12-22T14:33:50.190259 #23052] DEBUG -- : 
+D, [2015-12-22T14:33:50.190309 #23052] DEBUG -- : 
+I, [2015-12-22T14:33:50.190409 #23052]  INFO -- : Started POST "/events" for 127.0.0.1 at 2015-12-22 14:33:50 -0700
+D, [2015-12-22T14:33:50.192700 #23052] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T14:33:50.193520 #23052] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("data", "created_at", "updated_at") VALUES (?, ?, ?)  [["data", "NAME_22_1 is now at LATITUDE/LONGITUDE"], ["created_at", "2015-12-22 21:33:50.192775"], ["updated_at", "2015-12-22 21:33:50.192775"]]
+D, [2015-12-22T14:33:50.194432 #23052] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T14:34:05.309877 #23052] DEBUG -- : 
+D, [2015-12-22T14:34:05.309933 #23052] DEBUG -- : 
+I, [2015-12-22T14:34:05.310056 #23052]  INFO -- : Started POST "/events/5" for 127.0.0.1 at 2015-12-22 14:34:05 -0700
+D, [2015-12-22T14:34:27.616825 #23052] DEBUG -- : 
+D, [2015-12-22T14:34:27.616882 #23052] DEBUG -- : 
+I, [2015-12-22T14:34:27.616991 #23052]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-22 14:34:27 -0700
+D, [2015-12-22T14:34:27.619940 #23052] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+D, [2015-12-22T14:34:27.620251 #23052] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+D, [2015-12-22T14:34:27.620308 #23052] DEBUG -- : theEvents.size : 2
+D, [2015-12-22T14:34:27.620532 #23052] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-22T14:34:43.647317 #23052] DEBUG -- : 
+D, [2015-12-22T14:34:43.647378 #23052] DEBUG -- : 
+I, [2015-12-22T14:34:43.647510 #23052]  INFO -- : Started GET "/events/21" for 127.0.0.1 at 2015-12-22 14:34:43 -0700
+D, [2015-12-22T14:34:43.650202 #23052] DEBUG -- :   [1m[36mEvent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 21]]
+D, [2015-12-22T14:34:43.651724 #23052] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 21]]
+D, [2015-12-22T14:34:51.023927 #23052] DEBUG -- : 
+D, [2015-12-22T14:34:51.023985 #23052] DEBUG -- : 
+I, [2015-12-22T14:34:51.024104 #23052]  INFO -- : Started GET "/events/2" for 127.0.0.1 at 2015-12-22 14:34:51 -0700
+D, [2015-12-22T14:34:51.027089 #23052] DEBUG -- :   [1m[36mEvent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2015-12-22T14:35:18.751493 #23052] DEBUG -- : 
+D, [2015-12-22T14:35:18.751550 #23052] DEBUG -- : 
+I, [2015-12-22T14:35:18.751660 #23052]  INFO -- : Started PUT "/events/22" for 127.0.0.1 at 2015-12-22 14:35:18 -0700
+D, [2015-12-22T14:35:18.754701 #23052] DEBUG -- :   [1m[35mEvent Exists (0.1ms)[0m  SELECT  1 AS one FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 22]]
+D, [2015-12-22T14:35:18.754977 #23052] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 22]]
+D, [2015-12-22T14:35:18.755306 #23052] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T14:35:18.756941 #23052] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "events" SET "data" = ?, "updated_at" = ? WHERE "events"."id" = ?[0m  [["data", "NAME-22-2 is now at LATITUDE/LONGITUDE"], ["updated_at", "2015-12-22 21:35:18.755436"], ["id", 22]]
+D, [2015-12-22T14:35:18.757987 #23052] DEBUG -- :   [1m[35m (0.8ms)[0m  commit transaction
+D, [2015-12-22T14:35:27.591373 #23052] DEBUG -- : 
+D, [2015-12-22T14:35:27.591430 #23052] DEBUG -- : 
+I, [2015-12-22T14:35:27.591543 #23052]  INFO -- : Started GET "/events/22" for 127.0.0.1 at 2015-12-22 14:35:27 -0700
+D, [2015-12-22T14:35:27.594419 #23052] DEBUG -- :   [1m[36mEvent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 22]]
+D, [2015-12-22T14:35:27.594668 #23052] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 22]]
+D, [2015-12-22T14:35:41.555225 #23052] DEBUG -- : 
+D, [2015-12-22T14:35:41.555270 #23052] DEBUG -- : 
+I, [2015-12-22T14:35:41.555359 #23052]  INFO -- : Started PUT "/events/2" for 127.0.0.1 at 2015-12-22 14:35:41 -0700
+D, [2015-12-22T14:35:41.557954 #23052] DEBUG -- :   [1m[36mEvent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2015-12-22T14:36:07.813817 #23052] DEBUG -- : 
+D, [2015-12-22T14:36:07.813874 #23052] DEBUG -- : 
+I, [2015-12-22T14:36:07.813988 #23052]  INFO -- : Started DELETE "/events/22" for 127.0.0.1 at 2015-12-22 14:36:07 -0700
+D, [2015-12-22T14:36:07.816732 #23052] DEBUG -- :   [1m[35mEvent Exists (0.1ms)[0m  SELECT  1 AS one FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 22]]
+D, [2015-12-22T14:36:07.816980 #23052] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 22]]
+D, [2015-12-22T14:36:07.817221 #23052] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T14:36:07.817778 #23052] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 22]]
+D, [2015-12-22T14:36:07.818628 #23052] DEBUG -- :   [1m[35m (0.7ms)[0m  commit transaction
+D, [2015-12-22T14:36:21.258350 #23052] DEBUG -- : 
+D, [2015-12-22T14:36:21.258415 #23052] DEBUG -- : 
+I, [2015-12-22T14:36:21.258502 #23052]  INFO -- : Started DELETE "/events/2" for 127.0.0.1 at 2015-12-22 14:36:21 -0700
+D, [2015-12-22T14:36:21.260689 #23052] DEBUG -- :   [1m[36mEvent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2015-12-22T14:36:40.721462 #23052] DEBUG -- : 
+D, [2015-12-22T14:36:40.721507 #23052] DEBUG -- : 
+I, [2015-12-22T14:36:40.721596 #23052]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-22 14:36:40 -0700
+D, [2015-12-22T14:36:40.723783 #23052] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+D, [2015-12-22T14:36:40.724052 #23052] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+D, [2015-12-22T14:36:40.724133 #23052] DEBUG -- : theEvents.size : 1
+D, [2015-12-22T14:36:40.724361 #23052] DEBUG -- :   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+D, [2015-12-22T14:36:56.557171 #23052] DEBUG -- : 
+D, [2015-12-22T14:36:56.557222 #23052] DEBUG -- : 
+I, [2015-12-22T14:36:56.557320 #23052]  INFO -- : Started DELETE "/events" for 127.0.0.1 at 2015-12-22 14:36:56 -0700
+D, [2015-12-22T14:36:56.559590 #23052] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-22T14:36:56.559794 #23052] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T14:36:56.560298 #23052] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 21]]
+D, [2015-12-22T14:36:56.561100 #23052] DEBUG -- :   [1m[35m (0.7ms)[0m  commit transaction
+D, [2015-12-22T14:44:09.627189 #23052] DEBUG -- : 
+D, [2015-12-22T14:44:09.627248 #23052] DEBUG -- : 
+I, [2015-12-22T14:44:09.627356 #23052]  INFO -- : Started DELETE "/events" for 127.0.0.1 at 2015-12-22 14:44:09 -0700
+D, [2015-12-22T14:44:09.629805 #23052] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+D, [2015-12-22T14:44:18.250527 #23052] DEBUG -- : 
+D, [2015-12-22T14:44:18.250576 #23052] DEBUG -- : 
+I, [2015-12-22T14:44:18.250669 #23052]  INFO -- : Started GET "/events" for 127.0.0.1 at 2015-12-22 14:44:18 -0700
+D, [2015-12-22T14:44:18.252906 #23052] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+D, [2015-12-22T14:45:04.199247 #23052] DEBUG -- : 
+D, [2015-12-22T14:45:04.199292 #23052] DEBUG -- : 
+I, [2015-12-22T14:45:04.199379 #23052]  INFO -- : Started DELETE "/events" for 127.0.0.1 at 2015-12-22 14:45:04 -0700
+D, [2015-12-22T14:45:04.201385 #23052] DEBUG -- :   [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
