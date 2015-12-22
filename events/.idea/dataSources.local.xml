@@ -4,5 +4,8 @@
     <data-source name="Rails events: development" uuid="dd48da0c-a324-4b2c-bec9-7e621f990764">
       <auth-required>false</auth-required>
     </data-source>
+    <data-source name="Rails events: test" uuid="26cbb2a9-2127-48e6-85aa-773289cfc4d5">
+      <auth-required>false</auth-required>
+    </data-source>
   </component>
 </project>
