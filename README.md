@@ -5,6 +5,16 @@ This project was implemented with Ruby 2.2.1 and Rails 4.2.5
 
 The rails platform has very good support for implementing restful web services which is why I selected it.  By default rails runs on port 3000 although that can be changed on the command line.  It also uses an sqlite3 database that is located in oracleRestApi/events/db/development.sqlite3.
 
+If you are running from a fresh install of rails you need to run the following command to get up and running with active record:
+	rake db:migrate
+
+There are also some required gems :
+	rspec-rails
+	factory_girl
+	airborne
+
+Make sure these gems are installed it you want to run the rspec tests.
+
 To run it you need to install the required ruby and rails versions via rvm.  To run the code you first need to start up the rails server.  Here are the steps :
 
   1.) cd to the oracleRestApi/events directory

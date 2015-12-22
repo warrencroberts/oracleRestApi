@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa79178b-5a8f-4ce5-920d-1c809acbb791" name="Default" comment="Updated README.md as well as test_run_results.txt.  I also saw that some of the files required by the factory_girl gem were missing from my previous commit so I added them.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.rspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/generate/USAGE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/generate/generate_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/rspec_rails/USAGE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/rspec_rails/rspec_rails_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+    <list default="true" id="fa79178b-5a8f-4ce5-920d-1c809acbb791" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppLog" afterPath="$PROJECT_DIR$/AppLog" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test_run_results.txt" afterPath="$PROJECT_DIR$/../test_run_results.txt" />
     </list>
     <ignored path="events.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,8 +82,8 @@
       <file leaf-file-name="events_controller_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/events_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2605459">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.18610422">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -1323,7 +1314,7 @@
       <workItem from="1450586133373" duration="9759000" />
       <workItem from="1450654277307" duration="23602000" />
       <workItem from="1450805147321" duration="8179000" />
-      <workItem from="1450813390421" duration="7268000" />
+      <workItem from="1450813390421" duration="7475000" />
     </task>
     <task id="LOCAL-00001" summary="After creating Intellij project">
       <created>1450134984009</created>
@@ -1355,7 +1346,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450819732132</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated README.md as well as test_run_results.txt.  I also saw that some of the files required by the factory_girl gem were missing from my previous commit so I added them.">
+      <created>1450822474920</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1450822474920</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1391,7 +1388,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80625000" />
+    <option name="totallyTimeSpent" value="80832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="23" width="932" height="857" extended-state="0" />
@@ -1460,7 +1457,8 @@
     <MESSAGE value="I renamed the original human readable events interface to hevents and created a new events interface to implement the restful web service.  I have Get (all events) and Post working so far." />
     <MESSAGE value="All services except destroy all are working." />
     <MESSAGE value="Wrote rspec tests for the entire rest interface.  Modified rest calls to respond with json objects." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote rspec tests for the entire rest interface.  Modified rest calls to respond with json objects." />
+    <MESSAGE value="Updated README.md as well as test_run_results.txt.  I also saw that some of the files required by the factory_girl gem were missing from my previous commit so I added them." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md as well as test_run_results.txt.  I also saw that some of the files required by the factory_girl gem were missing from my previous commit so I added them." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1842,8 +1840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/events_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2605459">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.18610422">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
